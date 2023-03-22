@@ -9,7 +9,7 @@ function signUp() {
         return;
     }
     // 'https://scarlet-macaw-fez.cyclic.app/signup 
-    axios.post('http://localhost:3000/signup', {
+    axios.post('https://scarlet-macaw-fez.cyclic.app/signup', {
         firstName,
         lastName,
         email,
@@ -28,7 +28,7 @@ function signUp() {
 function login() {
     let email = document.getElementById('lemail').value;
     let password = document.getElementById('lpassword').value;
-    axios.post('http://localhost:3000/login', {
+    axios.post('https://scarlet-macaw-fez.cyclic.app/login', {
         email,
         password
     })
