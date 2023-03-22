@@ -34,7 +34,7 @@ app.post("/signup",(req,res)=>{
     password:body.password
    }
    usersDataBase.push(newUser);
-   res.status(201).send({message: "user Created"});
+   res.status(201).send({message: "User Created"});
 })
 
 app.post("/login",(req,res)=>{
