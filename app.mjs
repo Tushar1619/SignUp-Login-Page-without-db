@@ -5,10 +5,11 @@ function signUp() {
     let password = document.getElementById('password').value;
     let repassword = document.getElementById('repassword').value;
     if(repassword!=password){
-        document.getElementById(message).innerHTML="Password does not match"
+        document.getElementById("message").innerHTML="Password does not match"
         return;
     }
-    axios.post('https://scarlet-macaw-fez.cyclic.app/signup', {
+    // 'https://scarlet-macaw-fez.cyclic.app/signup 
+    axios.post('http://localhost:3000/signup', {
         firstName,
         lastName,
         email,
@@ -27,7 +28,7 @@ function signUp() {
 function login() {
     let email = document.getElementById('lemail').value;
     let password = document.getElementById('lpassword').value;
-    axios.post('https://scarlet-macaw-fez.cyclic.app/login', {
+    axios.post('http://localhost:3000/login', {
         email,
         password
     })
