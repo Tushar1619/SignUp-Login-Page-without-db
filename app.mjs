@@ -8,8 +8,8 @@ function signUp() {
         document.getElementById("message").innerHTML="Password does not match"
         return;
     }
-    // 'https://scarlet-macaw-fez.cyclic.app/signup 
-    axios.post('https://scarlet-macaw-fez.cyclic.app/signup', {
+    // 'https://fair-erin-lizard.cyclic.app/signup 
+    axios.post('https://fair-erin-lizard.cyclic.app/signup', {
         firstName,
         lastName,
         email,
@@ -28,7 +28,7 @@ function signUp() {
 function login() {
     let email = document.getElementById('lemail').value;
     let password = document.getElementById('lpassword').value;
-    axios.post('https://scarlet-macaw-fez.cyclic.app/login', {
+    axios.post('https://fair-erin-lizard.cyclic.app/login', {
         email,
         password
     })
