@@ -1,8 +1,9 @@
 import express from 'express';
 import { nanoid } from 'nanoid'
-
+import cors from 'cors';
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 let port = 3000 || process.env.PORT ; 
 let usersDataBase = [];
