@@ -3,7 +3,7 @@ function signUp() {
     let lastName = document.getElementById('lastName').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    axios.post('http://localhost:3000/signup', {
+    axios.post('https://app.cyclic.sh/#/app/tushar1619-signup-login-page-without-db/logs/signup', {
         firstName,
         lastName,
         email,
@@ -22,7 +22,7 @@ function signUp() {
 function login() {
     let email = document.getElementById('lemail').value;
     let password = document.getElementById('lpassword').value;
-    axios.post('http://localhost:3000/login', {
+    axios.post('https://app.cyclic.sh/#/app/tushar1619-signup-login-page-without-db/logs/login', {
         email,
         password
     })
